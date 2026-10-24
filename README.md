@@ -19,6 +19,7 @@ BLOOM is a calming, mobile-friendly Mahjong Solitaire game. Match pairs of ident
 - Clear all tiles to finish a board and unlock the next level.
 - Use **Hint** to highlight a match, **Undo** to reverse a move, and **Restart** to try again.
 - On a narrow screen, swipe horizontally to explore the full board.
+- Phone layouts keep controls within the screen and preserve both board scroll positions when selecting tiles, using Hint or Undo, or toggling music. Rotate your phone for a wider view.
 
 ## Levels
 
@@ -41,13 +42,16 @@ BLOOM is a calming, mobile-friendly Mahjong Solitaire game. Match pairs of ident
 
 ```text
 .
-├── index.html   # Complete self-contained HTML, CSS, JavaScript, tile art, and audio
+├── index.html   # HTML shell
+├── style.css    # Responsive layout and styling
+├── script.js    # Game, tile art, and synthesized audio
+├── CLAUDE.md    # Contributor guide
 └── README.md    # This guide
 ```
 
 ## Publish with GitHub Pages
 
-1. Upload `index.html` and `README.md` to the default branch of your GitHub repository.
+1. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the default branch of your GitHub repository.
 2. Open **Settings → Pages**.
 3. Under **Build and deployment**, select **Deploy from a branch**, then choose `main` and `/ (root)`.
 4. Save and use the URL shown by GitHub Pages when deployment finishes.
